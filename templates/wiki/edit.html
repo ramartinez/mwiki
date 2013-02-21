@@ -1,0 +1,6 @@
+<h1> Creaci&oacute;n de la p&aacute;gina {{ page_name }} </h1>
+<form name="post" action="/wiki/{{page_name}}/save/" method="post">
+	{% csrf_token %}
+	<p> <textarea name="content" rows="15" cols="50"> {{ content }}</textarea> </p>
+	<p> <input type="submit" value="Guardar" /> </p>
+</post>
